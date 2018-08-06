@@ -1,0 +1,38 @@
+2018-07-05 16:24:35,526    DEBUG [login成功])
+2018-07-05 16:24:55,544    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-106")>clicked)
+2018-07-05 16:26:40,681    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-107")>clicked)
+2018-07-05 16:28:25,822    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-108")>clicked)
+2018-07-05 16:30:10,975    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-109")>clicked)
+2018-07-05 16:31:56,174    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-110")>clicked)
+2018-07-05 16:33:41,360    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-111")>clicked)
+2018-07-05 16:35:26,504    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-112")>clicked)
+2018-07-05 16:37:11,658    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-113")>clicked)
+2018-07-05 16:38:56,797    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-114")>clicked)
+2018-07-05 16:40:41,941    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-115")>clicked)
+2018-07-05 16:42:27,155    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-116")>clicked)
+2018-07-05 16:44:12,311    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-593")>clicked)
+2018-07-05 16:45:57,462    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-594")>clicked)
+2018-07-05 16:47:42,717    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-595")>clicked)
+2018-07-05 16:49:27,856    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-596")>clicked)
+2018-07-05 16:51:12,996    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-597")>clicked)
+2018-07-05 16:52:58,131    DEBUG <selenium.webdriver.remote.webelement.WebElement (session="7270f25664fb26127b790cc1ea77491a", element="0.5944341702937315-598")>clicked)
+2018-07-05 16:54:43,464    DEBUG [logout完了])
+2018-07-05 16:54:50,498    DEBUG [コピー対象（JPG）]JPG_2018024-a.tar.gz,JPG_2018024-b.tar.gz,JPG_2018024-c.tar.gz,JPG_2018024-d.tar.gz,JPG_2018024-e.tar.gz,JPG_2018024-f.tar.gz,JPG_2018024-g.tar.gz,JPG_2018024-h.tar.gz,JPG_2018024-i.tar.gz,JPG_2018024-j.tar.gz,JPG_2018024-k.tar.gz)
+2018-07-05 16:54:50,527    DEBUG [コピー対象（JPH）]JPH_2018024-a.tar.gz,JPH_2018024-b.tar.gz,JPH_2018024-c.tar.gz,JPH_2018024-d.tar.gz,JPH_2018024-e.tar.gz,JPH_2018024-f.tar.gz)
+2018-07-05 16:54:50,938    DEBUG [C:\Users\常重　友佑\Downloads\JPG_2018024_downfiles\ へ移動完了])
+2018-07-05 16:54:50,946    DEBUG [C:\Users\常重　友佑\Downloads\JPH_2018024_downfiles\ へ移動完了])
+2018-07-05 17:02:46,861    ERROR Traceback)
+Stack (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\Extensions\Microsoft\Python\Core\ptvsd_launcher.py", line 111, in <module>
+    vspd.debug(filename, port_num, debug_id, debug_options, run_as)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\Extensions\Microsoft\Python\Core\ptvsd\debugger.py", line 2681, in debug
+    exec_file(file, globals_obj)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\Extensions\Microsoft\Python\Core\ptvsd\util.py", line 119, in exec_file
+    exec_code(code, file, global_variables)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\Extensions\Microsoft\Python\Core\ptvsd\util.py", line 95, in exec_code
+    exec(code_obj, global_variables)
+  File "C:\work\バッチ\PatentDataDownload\hello.py", line 175, in <module>
+    main()
+  File "C:\work\バッチ\PatentDataDownload\hello.py", line 171, in main
+    logger.error('Traceback',stack_info = True)
+2018-07-05 17:02:47,242    ERROR Destination path 'D:\workDdrive\作業系\特許DBインポート\2jph\JPH_2018024_downfiles' already exists)

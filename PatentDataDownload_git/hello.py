@@ -30,10 +30,52 @@ logger.addHandler(stream_handler)
 logger.addHandler(file_handler)
 logger.propagate = False
 
+#variables
+todayJPGFileName = ""
+
+#methods
+def get_today_JPGFile_name():
+
+    print('JPGFileName is JPG_20180XX')
+    i = input("Please input today's Number (20180XX)")
+    return i
+
+
+def confirm_file_name(arg_filename):
+    print('Is it OK todayJPGFileName is ' + arg_filename + '?')
+    input_confirm_todayJPGFileName = input('（y/n）>>')
+    print(input_confirm_todayJPGFileName+'input(">>")')
+    if(input_confirm_todayJPGFileName[0] == 'y'):
+        return True
+    else:
+        return False
+
 def main():
     try:
+        #コンソール画面で対話
+        baseJPGFileName = 'JPG_'
+        todayJPGFileName = baseJPGFileName + get_today_JPGFile_name()
+        
+        confirm_file_name(todayJPGFileName)
+        #input_confirm_todayJPGFileName = sys.stdin.readline()
+        #print(input_confirm_todayJPGFileName+'sys.stdin.readline()')
+
+        #input_confirm_todayJPGFileName = sys.stdin.read()
+        #print(input_confirm_todayJPGFileName+'sys.stdin.read()')
+
+        if(confirm_file_name()):
+            pass
+        else:
+            logger.debug('y以外が入力されたので中止します')
+            sys.exit()
+
+
+        user_id = input('Please input user_id')
+        pass_word = input('Please input password')
+
         #*********実行時に毎回変える*********
-        todayJPGFileName = 'JPG_2018040'
+
+        #todayJPGFileName = 'JPG_2018029'
         #todayJPGFileName = sys.argv[1]
         #*********変数*********
         # filenum = 5
@@ -54,28 +96,12 @@ def main():
         batJPHDecompressionDir = myJPHWorkDir + "\\" + dowmloadJphFoldername
         #**********************
 
-        #コンソール画面で対話
-        print('Is it OK todayJPGFileName is ' + todayJPGFileName + '?')
-        #input_confirm_todayJPGFileName = sys.stdin.readline()
-        #print(input_confirm_todayJPGFileName+'sys.stdin.readline()')
-
-        #input_confirm_todayJPGFileName = sys.stdin.read()
-        #print(input_confirm_todayJPGFileName+'sys.stdin.read()')
-
-        input_confirm_todayJPGFileName = input('（y/n）>>')
-        print(input_confirm_todayJPGFileName+'input(">>")')
-        if(input_confirm_todayJPGFileName[0] == 'y'):
-            pass
-        else:
-            logger.debug('y以外が入力されたので中止します')
-            sys.exit()
-
         driver = webdriver.Chrome("./chromedriver.exe")
         driver.get("https://bulkdl.j-platpat.inpit.go.jp/BD2Service/bd2/general/ListServlet")#特許データダウンロードサイト ログイン画面へ
         useridBox = driver.find_element_by_name("txtUserid")#User ID
-        useridBox.send_keys("jppdl082")
+        useridBox.send_keys(user_id)
         useridBox = driver.find_element_by_name("txtPassword")#Password
-        useridBox.send_keys("5Yopwav3")
+        useridBox.send_keys(pass_word)
         loginBotan = driver.find_element_by_name("btnLogin")#Loginボタン
         loginBotan.click()
 

@@ -33,7 +33,7 @@ logger.propagate = False
 def main():
     try:
         #*********実行時に毎回変える*********
-        todayJPGFileName = 'JPG_2018029'
+        todayJPGFileName = 'JPG_2018040'
         #todayJPGFileName = sys.argv[1]
         #*********変数*********
         # filenum = 5
